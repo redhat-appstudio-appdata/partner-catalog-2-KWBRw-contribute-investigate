@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: partner-catalog-dkhz
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/mramdani-tenant/partner-catalog-2/partner-catalog-dkhz@sha256:0a955b2d1d331c554c5c40b2110a11bd9fce7e3f63debdcda192e84dc938e004
         name: my-java-springboot
         ports:
         - containerPort: 8081
