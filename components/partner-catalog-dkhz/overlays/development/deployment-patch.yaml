@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-dkhz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mramdani-tenant/partner-catalog-2/partner-catalog-dkhz@sha256:0a955b2d1d331c554c5c40b2110a11bd9fce7e3f63debdcda192e84dc938e004
+        name: my-java-springboot
+        resources: {}
+status: {}
